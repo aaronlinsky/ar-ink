@@ -31,7 +31,7 @@
       </a-assets>
 
       <a-assets>
-        <a-video id="videoBunny" preload="auto"
+        <video id="videoBunny" preload="auto"
         src="https://cdn.aframe.io/videos/bunny.mp4"
         width="160" height="90" autoplay loop="true"
         crossOrigin="anonymous" muted></video>
@@ -62,13 +62,7 @@
       cursor="fuse: false; rayOrigin: mouse;"
       id="markerB"
     >
-    <a-entity material="shader: flat; src: #videoBunny"
-      geometry="primitive: plane; width: 160; height: 90;"
-      position="0 60 -250"
-      rotation="0 35 0"
-      play-on-click
-      visible="true">
-    </a-entity>
+      <a-video src="#videoBunny" width="16" height="9" ></a-video>
     </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
